@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="robots" content="noindex" />
+  <title>Post-op OPD · Gynecologic oncology</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231e2a28'/%3E%3Cpath fill='%23f2d3df' d='M14.5 6h3v20h-3zM6 14.5h20v3H6z'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <p class="eyebrow">Gynecologic oncology</p>
+          <h1>Post-op OPD</h1>
+        </div>
+      </div>
+      <nav class="sidenav" aria-label="Pages">
+        <a class="navlink" data-nav="list" href="#/">Clinic list</a>
+        <a class="navlink" data-nav="new" href="#/new">Add patient</a>
+      </nav>
+      <label class="side-field">
+        <span>Name on the note</span>
+        <input id="clinician" type="text" maxlength="80" placeholder="Dr your name" autocomplete="name" />
+      </label>
+      <div class="side-foot">
+        <p class="fine">Records stay in this browser on this computer. They are not sent to the internet. Download a backup after clinic.</p>
+        <button class="side-btn" type="button" data-action="export">Download backup</button>
+        <button class="side-btn" type="button" data-action="restore">Restore a backup</button>
+        <button class="link-danger" type="button" data-action="wipe">Delete all records</button>
+        <input id="restore-file" type="file" accept="application/json,.json" hidden />
+      </div>
+    </aside>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
